@@ -1,0 +1,13 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: wei-eureka-server
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://peer2:8092/eureka/, http://peer3:8093/eureka/

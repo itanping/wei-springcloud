@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: wei-consumer-turbine    # 指定进行服务注册时该服务的名称，服务与服务之间相互调用一般都是根据这个name
+server:
+  port: 8070
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka/    # 指定进行服务注册的地址
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+turbine:
+  app-config: wei-consumer-ribbon-hystrix-dashboard,wei-consumer-feign-hystrix-dashboard
+  clusterNameExpression: new String("default")
+  combine-host-port: true
+  instanceUrlSuffix:
+      default: actuator/hystrix.stream

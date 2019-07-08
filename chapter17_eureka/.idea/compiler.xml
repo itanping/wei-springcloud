@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="wei-config-client" />
+        <module name="wei-config-server" />
+        <module name="wei-consumer-feign" />
+        <module name="wei-consumer-ribbon" />
+        <module name="wei-eureka-server" />
+        <module name="wei-gateway-zuul" />
+        <module name="wei-service-provider" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="wei-config-client" target="1.7" />
+      <module name="wei-config-server" target="1.7" />
+      <module name="wei-consumer-feign" target="1.8" />
+      <module name="wei-consumer-ribbon" target="1.8" />
+      <module name="wei-eureka-server" target="1.8" />
+      <module name="wei-eureka-service" target="1.8" />
+      <module name="wei-gateway-zuul" target="1.7" />
+      <module name="wei-service-provider" target="1.8" />
+      <module name="wei-springcloud" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

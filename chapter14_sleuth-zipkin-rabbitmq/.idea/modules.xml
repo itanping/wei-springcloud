@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/wei-consumer-ribbon/wei-consumer-ribbon.iml" filepath="$PROJECT_DIR$/wei-consumer-ribbon/wei-consumer-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wei-eureka-server/wei-eureka-server.iml" filepath="$PROJECT_DIR$/wei-eureka-server/wei-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wei-service-provider/wei-service-provider.iml" filepath="$PROJECT_DIR$/wei-service-provider/wei-service-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wei-springcloud.iml" filepath="$PROJECT_DIR$/wei-springcloud.iml" />
+    </modules>
+  </component>
+</project>

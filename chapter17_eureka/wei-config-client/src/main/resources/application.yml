@@ -1,0 +1,6 @@
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8090/eureka/    # 指定进行服务注册的地址
+server:
+  port: 8050

@@ -1,0 +1,9 @@
+server:
+  port: 8020
+spring:
+  application:
+    name: wei-consumer-ribbon    # 指定进行服务注册时该服务的名称，服务与服务之间相互调用一般都是根据这个name
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka/    # 指定进行服务注册的地址

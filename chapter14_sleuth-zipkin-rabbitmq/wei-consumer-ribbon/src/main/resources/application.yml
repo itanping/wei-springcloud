@@ -1,0 +1,18 @@
+server:
+  port: 8025
+spring:
+  application:
+    name: wei-consumer-ribbon    # 指定进行服务注册时该服务的名称，服务与服务之间相互调用一般都是根据这个name
+  sleuth:
+    web:
+      client:
+        enabled: true
+    sampler:
+      probability: 1.0                   # 将采样比例设置为1.0，也就是全部都需要。默认是0.1
+  zipkin:
+    #base-url: http://localhost:9411/     # 指定了 Zipkin 服务器的地址
+    base-url: http://localhost:94111/     # 指向错误 Zipkin 服务器的地址，验证RabbitMQ
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka/    # 指定进行服务注册的地址

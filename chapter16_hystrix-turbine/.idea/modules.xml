@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/wei-consumer-feign-hystrix-dashboard/wei-consumer-feign-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/wei-consumer-feign-hystrix-dashboard/wei-consumer-feign-hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wei-consumer-ribbon-hystrix-dashboard/wei-consumer-ribbon-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/wei-consumer-ribbon-hystrix-dashboard/wei-consumer-ribbon-hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wei-consumer-turbine/wei-consumer-turbine.iml" filepath="$PROJECT_DIR$/wei-consumer-turbine/wei-consumer-turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wei-eureka-server/wei-eureka-server.iml" filepath="$PROJECT_DIR$/wei-eureka-server/wei-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wei-service-provider/wei-service-provider.iml" filepath="$PROJECT_DIR$/wei-service-provider/wei-service-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wei-springcloud.iml" filepath="$PROJECT_DIR$/wei-springcloud.iml" />
+    </modules>
+  </component>
+</project>

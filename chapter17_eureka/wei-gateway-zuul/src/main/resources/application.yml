@@ -1,0 +1,23 @@
+server:
+  port: 8060    # 自定义程序启动端口
+spring:
+  application:
+    name: wei-gateway-zuul    # 指定进行服务注册时该服务的名称，服务与服务之间相互调用一般都是根据这个name
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka/    # 指定进行服务注册的地址
+zuul:
+  routes:    # 配置路由映射
+    wei-service-provider: /providerGroup/**    # 服务名称映射。给指定的服务做映射，当前配置是将/wei-service-provider/**映射为/providerGroup/**
+    consumerGroup:    # 保证唯一
+      #url: http://localhost:8020/    # url绑定映射
+      serviceId: wei-consumer-ribbon    # 给指定的服务做映射
+      path: /consumerGroup/**    # path绑定映射。配置映射的路径，当前配置是将/wei-consumer-ribbon/**映射为/consumerGroup/**
+  prefix: /api
+ribbon:
+  eureka:
+    enabled: false    # 在eureka中禁用 ribbon 的负载均衡
+wei-consumer-ribbon:
+  ribbon:    # 给配置serviceId对应的服务指定ribbon负载均衡，从listOfServers配置的服务地址中分配服务，多个用半角逗号分隔
+    listOfServers: http://localhost:8010/, http://localhost:8011/

@@ -1,0 +1,12 @@
+server:
+  port: 8090                          # 服务端口配置
+eureka:
+  instance:
+    hostname: localhost              # 服务注册中心实例的主机名
+  client:
+    register-with-eureka: false    # 表示是否注册自身到eureka服务器，因为当前这个应用就是eureka服务器，没必要注册自身
+    fetch-registry: false           # 表示是否从eureka服务器获取注册信息，同上，这里不需要
+    service-url:                    # defaultZone是指定eureka服务器的地址，无论是注册还是发现服务都需要这个地址
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    enable-self-preservation: false    # 简单粗暴把自我保护模式关闭

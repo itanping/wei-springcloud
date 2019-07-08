@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: wei-config-client
+  cloud:
+    config:
+      uri: http://localhost:8040     # 配置服务中心的具体地址，即 config-server
+      name: config-client            # 对应配置文件名 config-client-dev.properties 的 {application} 部分
+      profile: dev                  # 对应配置文件名 config-client-dev.properties 的 {profile} 部分
+      label: master                 # 使用 {label} 对应 Git 的分支名，如果配置中心使用的是本地存储，则该参数无用

@@ -1,0 +1,18 @@
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8090/eureka/    # 指定进行服务注册的地址
+server:
+  port: 8040
+spring:
+  application:
+    name: wei-config-server
+  cloud:
+    config:
+      label: master    # 对应 Git 上不同的分支，默认为 master
+      server:
+        git:
+          username:
+          password:
+          uri: https://github.com/itanping/wei-springcloud     # 配置 Git 仓库地址
+          search-paths: wei-config/config-profile            # Git仓库地址下的相对地址，可以配置多个，用,分割
